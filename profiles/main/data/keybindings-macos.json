@@ -77,6 +77,16 @@
     "when": "editorFocus || editorIsOpen"
   },
   {
+    "key": "ctrl+x 3",
+    "command": "workbench.action.splitEditor",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "f8",
+    "command": "editor.action.marker.next",
+    "when": "editorFocus && !editorReadonly"
+  },
+  {
     "key": "ctrl+shift+s",
     "command": "workbench.action.findInFiles"
   },
@@ -167,5 +177,65 @@
   {
     "key": "ctrl+w",
     "command": "execCut"
-  }
+  },
+  {
+    "key": "ctrl+x h",
+    "command": "editor.action.selectAll",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+p",
+    "command": "workbench.action.focusPreviousGroup"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.previousEditorInGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.nextEditorInGroup"
+  },
+  {
+    "key": "ctrl+alt+shift+j",
+    "command": "workbench.action.moveEditorLeftInGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+shift+k",
+    "command": "workbench.action.moveEditorRightInGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+shift+n",
+    "command": "workbench.action.moveEditorToNextGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+shift+p",
+    "command": "workbench.action.moveEditorToPreviousGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+x o",
+    "command": "workbench.action.navigateEditorGroups",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+m",
+    "command": "editor.action.joinLines",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+p",
+    "command": "cursorMove",
+    "args": { "to": "up", "by": "line", "value": 5 },
+    "when": "textInputFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "cursorMove",
+    "args": { "to": "down", "by": "line", "value": 5 },
+    "when": "textInputFocus && !suggestWidgetVisible"
+  },
 ]
